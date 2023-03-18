@@ -28,10 +28,10 @@ const DynamicText = () => {
                 if(wordIndex >= array.length) {
                     wordIndex = 0;
                     letterIndex = 0;
-                    loop();;
+                    loop();
                 }
 
-                if(letterIndex < array[wordIndex.length]) {
+                else if(letterIndex < array[wordIndex].length) {
                     createLetter();
                     letterIndex++;
                     loop();
